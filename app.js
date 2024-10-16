@@ -3,7 +3,7 @@ import cors from 'cors'; // Importa o middleware CORS para permitir requisiçõe
 import productRoutes from './routes/products.js'; // Importa as rotas de produtos
 import userRoutes from './routes/users.js'; // Importa as rotas de usuários
 import sequelize from './config/database.js'; // Importa a configuração do Sequelize para conexão com o banco de dados
-import authMiddleware from './middlewares/authMiddleware.js'; // Importa o middleware de autenticação
+import authMiddleware from './routes/authMiddleware.js'; // Importa o middleware de autenticação
 
 const app = express(); // Cria uma instância do servidor Express
 
